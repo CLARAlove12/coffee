@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" height="30" alt="logo">
+        </div>
+        <input id="Search" type="text" placeholder="Search...">
+        <div class="right">
+          <i class="fa-solid fa-bars sidebar-toggle" onclick="toggleSidebar()"></i>
+          <i id="mode-toggle" class="fa-solid fa-moon" onclick="toggleDarkMode()"></i>
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" class="profile-pic" alt="Profile">
+        </div>
+      </div>
+    
+      <div class="sidebar closed" id="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h2><i class="fa-solid fa-play"></i> CnTube</h2>
+        <h3>Explore</h3>
+        <a href=""><i class="fa-solid fa-fire"></i> Trending</a>
+        <a href=""><i class="fa-solid fa-music"></i> Music</a>
+        <a href=""><i class="fa-solid fa-gamepad"></i> Gaming</a>
+        <a href=""><i class="fa-solid fa-futbol"></i> Sports</a>
+        <h3>More From YouTube</h3>
+        <a href=""><i class="fa-solid fa-circle-plus"></i> YouTube Plus</a>
+        <a href="#"><i class="fa-solid fa-headphones"></i> YouTube Music</a>
+        <a href=""><i class="fa-solid fa-child"></i> YouTube Kids</a>
+        <a href=""><i class="fa-solid fa-gear"></i> Settings</a>
+        <a href=""><i class="fa-solid fa-flag"></i> Report</a>
+        <a href=""><i class="fa-solid fa-circle-question"></i> Help</a>
+        <a href=""><i class="fa-solid fa-comment-dots"></i> Feedback</a>
+      </div>
+    
+      <div class="main-content full" id="main">
+        <div class="video-grid" id="videos"></div>
+      </div>
+    
+      <script src="index.js"></script>
+</body>
+</html>

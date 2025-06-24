@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Flip Book</title>
+  <link rel="stylesheet" href="test.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+ <div class="flipbook">
+    <div class="hard">Étudiante passionnée en développement web.<small>~  voici mon histoire</small></div>
+    <div class="hard"></div>
+    <div>
+      <small> Bienvenue dans mon univers de développeuse web !❤️</small>
+      <small> Ouvrez le livre ! </small>
+    </div>
+    <div>
+      <div class="page1">
+        <img src="images/img-1.png" alt="" />
+        <div class="texte">
+            <h2>ADETOU A.E.Clarisse</h2>
+        <h3>Developpeur web</h3>
+        </div>
+      <div class="icone">
+         <a href=""><i class="fa-brands fa-linkedin"></i></a>
+         <a href=""><i class="fa-brands fa-github"></i></a>
+         <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <p class="profil">
+        Étudiante en troisième année de licence en informatique, spécialisée en
+ développement web. Je possède une bonne forte capacité
+ d’adaptation. Organisée, sérieuse et motivée <br>,je suis à la recherche
+ d’une opportunité pour mettre en pratique mes compétences dans un
+ environnement professionnel stimulant.
+      </p>
+      <a href=""><button>Télécharge CV</button></a>
+      <a href=""><button>contact moi</button></a>
+      </div>
+      <small class="small1"> Page 1 </small>
+    </div>
+    <div>
+        <div class="page2">
+            <h2>E DUCATION</h2>
+            <ul>
+                <li>EXCEL, WORD,  POWERPOINT</li>
+                <li><i class="fa-solid fa-calendar-days"></i><span>2021-2022</span> <br> Bac2 à CS la Maitrise</li>
+                <li><i class="fa-solid fa-calendar-days"></i><span>2022-2025 </span><br>UNIVERSITÉESGIS-TOGO (LICENCE En cours)</li>
+            </ul><br>
+            <h2><i class="fa-solid fa-hexagon-nodes-bolt"></i><span>SKILLS</span></h2>
+            <ul>
+                <li> Esprit d’analyse</li>
+                <li>Autonomie et sens de l’initiative </li>
+                <li>Travail en équipe </li>
+                <li>Capacité d’adaptation</li>
+                <li>Bonne communication écrite et orale</li>
+            </ul><br>
+            <h2> <i class="fa-solid fa-language"> </i><span>LANGUES</span></h2>
+            <ul>
+                <li>Anglais niveau scolaire</li>
+                <li>Français lu-écrit-parlé</li>
+            </ul>
+        </div>
+      <!-- <img src="images/img-2.png" alt="" /> -->
+      <small class="small2"> Page 2 </small>
+    </div>
+    <div>
+        <div class="page3">
+            <h2>EXPÉRIENCES ACADÉMIQUES</h2>
+            <h3> DÉVELOPPEMENT DE SITES WEB RESPONSIVES</h3>
+            <ul>
+                <li>Intégration avec HTML, CSS, Tailwind CSS ,JS </li><br>
+                <li>Création d’interfaces dynamiques avec Vue.js</li><br>
+                <li>Utilisation de composants, directives et gestion de données via Vue</li><br>
+                <li>Participation à des mini-projets en groupe et individuels</li><br>
+                <li>Animation avec CSS (transitions, keyframes)</li>
+            </ul><br>
+            <h3>NOTIONS DE DÉVELOPPEMENT BACK-END</h3><br>
+            <ul>
+                <li> Bases en PHP pour la gestion de formulaires et connexions simples à une base de données </li><br>
+                <li>Familiarisation avec les requêtes HTTP, validation de données</li>
+                <li></li>
+            </ul>
+        </div>
+      <img src="images/img-3.png" alt="" />
+      <small> Page 3 </small>
+    </div>
+    <div>
+       <div class="page4">
+        <ul>
+            <li>Bases de données : notions en MySQL et SQLite
+(création de tables, insertion, requêtes SQL simples)</li><br>
+<li>Laravel (Frontend uniquement) – Blade, layouts, composants</li><br>
+<li>Découverte du backend Laravel en cours</li>
+        </ul><br>
+        <h3> CENTRES D'INTÉRÊTS </h3><br>
+        <p>Dynamisme, Créativité, Musique,<br> <br> dessin, Lecture, Curiosité,</p><br>
+       </div>
+      <p class="mew"><small> Page 4 </small></p>
+    </div>
+    <div>
+      <div class="page5">
+         <div class="form-container">
+    <h2>Contactez-moi</h2>
+    <form action="#" method="POST">
+      <label for="name">Nom complet</label>
+      <input type="text" id="name" name="name" required placeholder="nom complet">
+
+      <label for="email">Adresse email</label>
+      <input type="email" id="email" name="email" required placeholder="email">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="message"></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+      </div>
+      <small> Page 5 </small>
+    </div>
+    <div class="hard"></div>
+    <div class="hard">Merci d’avoir exploré mon CV. <small>~ A plus</small></div>
+  </div>
+
+  <script src="test1.js"></script>
+  <script src="test2.js"></script>
+  <script>
+    $(".flipbook").turn();
+  </script>
+ 
+</body>
+</html>

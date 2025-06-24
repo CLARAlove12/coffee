@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/coffee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar">
+          <a class="nav-logo" href="logo">
+            <h2 class="texte-logo">☕Coffee</h2>
+          </a>
+          <div id="menu" class="menu-burger" onclick="showSidebar()">
+            <i class="fa-solid fa-bars" style="color: #fcfcfd;"></i>
+          </div>
+          <ul class="sidebar">
+            <li onclick="hideSidebar()" class="nav-item">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="34px" fill="#3b141c"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
+          </ul>
+          <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <section id="Home" class="section-home">
+        <div class="coffee_pub">
+          <h2 class="miniver">Best Coffee</h2>
+          <h3>Make your day great with our special coffee !</h3>
+          <p>welcome to your coffe paradise, where evry beans tells a story and every cup sparks joy.</p>
+          <button class="btn1">order now </button>
+          <button class="btn2">contact us</button>
+        </div>
+        <div>
+          <img class="coffee1" src="./assets/img/coffee1.png" alt="">
+        </div>
+      </section>
+    
+      <section id="About" class="section-abaout">
+        <div>
+          <img class="take-coffee" src="./assets/img/deuxpersonnes.jpg" alt="">
+        </div>
+        <div>
+          <h3 class="para-coffeeh3">ABOUT US</h3>
+          <hr class="ligne">
+          <p class="para-coffee">At Coffee House in Bendorf, Germany, we pride ourselves on being a go-to destination for coffee lovers and conversation seekers aloke. we're dedicated toproviding on exeptional coffee experience in a cozy and inviting atmosphere, where guest can relax, Unwind. and enjoy their time in confort.</p>
+          <div class="icones">
+            <a href=""><i class="fa-brands fa-facebook" style="color: #0f0f0f;"></i></a>
+            <a href=""><i class="fa-brands fa-instagram" style="color: #050505;"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter" style="color: #050505;"></i></a>
+          </div>
+        </div>
+      </section>
+    
+      <section id="Menu" class="section-menu">
+        <h2 class="menuh2">OUR MENU</h2>
+        <hr class="ligne3">
+        <div class="menu1">
+          <div class="me">
+            <img class="mee" src="./assets/img/Hot_Beverages.png" alt="">
+            <h3 class="texte">Hot Beverages</h3>
+            <p class="texte">Wide range of treaming hot coffee to make you fresh and light.</p>
+          </div>
+          <div class="me">
+            <img class="Cold" src="./assets/img/Cold_Beverages.png" alt="">
+            <h3 class="texte">Cold Beverages</h3>
+            <p class="texte">Creamy and frotty cold coffee to make you cool</p>
+          </div>
+          <div class="me">
+            <img class="mee" src="./assets/img/Refreshment.png" alt="">
+            <h3 class="texte">Refreshment</h3>
+            <p class="texte">Fruits and icy refreshing drink to make feel refresh</p>
+          </div>
+          <div class="me">
+            <img class="mee" src="./assets/img/Special_Combo.png" alt="">
+            <h3 class="texte">Special Combo</h3>
+            <p class="texte">Your favorite eating and drinking comboting</p>
+          </div>
+          <div class="me">
+            <img class="Dessert" src="./assets/img/Dessert.png" alt="">
+            <h3 class="texte">Dessert</h3>
+            <p class="texte">Satiate your palate and take you on a culinary treat</p>
+          </div>
+          <div class="me">
+            <img class="mee" src="./assets/img/Burger___French_Fries.png" alt="">
+            <h3 class="texte">Burger & French Fries</h3>
+            <p class="texte">quick bites to satisfy your small size hunger</p>
+          </div>
+        </div>
+      </section>
+    
+      <!-- <section id="Testimonials" class="testimonials-section">
+        <h2 class="section-title">Ce que disent nos clients</h2>
+        <div class="carousel">
+          <input type="radio" name="slider" id="slide1" checked>
+          <input type="radio" name="slider" id="slide2">
+          <input type="radio" name="slider" id="slide3">
+          <input type="radio" name="slider" id="slide4">
+          <input type="radio" name="slider" id="slide5">
+        
+          <div class="slides">
+            <div class="testimonial-card t1"><img src="https://randomuser.me/api/portraits/women/1.jpg" alt=""><h3>Clarisse Esia</h3><p>“Un café délicieux et un service chaleureux.”</p></div>
+            <div class="testimonial-card t2"><img src="https://randomuser.me/api/portraits/men/2.jpg" alt=""><h3>Valerie magnim</h3><p>“Endroit calme et parfait pour discuter.”</p></div>
+            <div class="testimonial-card t3"><img src="https://randomuser.me/api/portraits/women/3.jpg" alt=""><h3>Grace Bk</h3><p>“Le cappuccino est mon préféré.”</p></div>
+            <div class="testimonial-card t4"><img src="https://randomuser.me/api/portraits/men/4.jpg" alt=""><h3>Daniel</h3><p>“Ambiance conviviale, je recommande.”</p></div>
+            <div class="testimonial-card t5"><img src="https://randomuser.me/api/portraits/women/5.jpg" alt=""><h3>Ibraum</h3><p>“Boissons glacées parfaites pour l’été.”</p></div>
+
+          </div>
+          <div class="dots">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+           
+          </div>
+        </div>
+      </section> -->
+    
+     <section id="Gallery">
+        <h2 class="galleryh2">Gallery</h2>
+        <hr class="ligne2">
+      <div class="section-gallery">
+        <div>
+            <img class="img-food" src="./assets/img/food1.jpg" alt="">
+         </div>
+         <div>
+            <img class="img-food" src="./assets/img/food4.jpg" alt="">
+         </div>
+         <div>
+            <img class="img-food" src="./assets/img/food2.jpg" alt="">
+         </div>
+         <div>
+            <img class="img-food" src="./assets/img/food5.jpg" alt="">
+         </div>
+         <div>
+            <img class="img-food" src="./assets/img/food3.jpg" alt="">
+         </div>
+         <div>
+            <img class="img-food" src="./assets/img/food6.jpg" alt="">
+         </div>
+         <div>
+            <img class="img-food" src="./assets/img/food8.jpg" alt="">
+         </div>
+         <div>
+            <img class="img-food" src="./assets/img/food7.jpg" alt="">
+         </div>
+      </div> 
+      
+     </section>
+    
+
+      <section id="Contacts">
+        <h2 class="contacth2">Contact Us</h2>
+        <hr class="ligne4">
+
+        <div class="section-contact">
+          <div class="infos">
+            <h3><i class="fa-duotone fa-solid fa-location-pin" style="--fa-primary-color: #0f0f0f; --fa-secondary-color: #0f0f0f;"></i>adidogome esgis</h3> <br>
+            <h3><i class="fa-regular fa-envelope" style="color: #050505;"></i>Goodcoffee@gmail.com</h3><br>
+            <h3><i class="fa-regular fa-phone" style="color: #0f0f0f;"></i>+228 97379663</h3><br>
+            <h3><i class="fa-regular fa-clock" style="color: #030303;"></i> Monday-Friday: 9h AM - 10h PM </h3><br>
+            <h3><i class="fa-regular fa-clock" style="color: #030303;"></i>Saturday: 10h AM - 5h PM</h3><br>
+            <h3><i class="fa-regular fa-clock" style="color: #030303;"></i> Sunday: Closed</h3><br>
+            <h3><i class="fa-solid fa-globe" style="color: #000000;"></i>wwwnomducafe</h3><br>
+          </div>
+          <div class="formulaire">
+            <form action="#" method="post" style="max-width: 400px; margin: auto;">
+                <label for="name">Nom :</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+              
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+              
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+              
+                <button type="submit">Submit</button>
+              </form>
+              
+          </div>
+        </div>
+      </section>
+    
+      <script src="./assets/js/coffee.js"></script>
+</body>
+</html>

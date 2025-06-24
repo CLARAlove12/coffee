@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 10; 
+}
+
+.right {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.left i {
+  margin-right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  gap: 5px;
+  position: relative;
+  z-index: 10; 
+}
+
+#menu {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+   justify-content: center;
+  align-items: center; 
+  margin-top: 20px;
+  position: relative;
+  transition: 0.3s ease;
+  z-index: 10; 
+  background-color: antiquewhite;
+  width: 100px;
+  margin-left: 1200px;
+}
+
+.nav-item{
+
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  justify-content: flex-end; 
+  display: none;
+  width: 250px;
+  height: 450px;
+  background-color: #cabcbc;
+  color: rgb(7, 7, 7);
+  position: fixed;
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 25px;
+  padding-top: 90px;
+  top: 42px;
+  gap: 25px; 
+  border-radius: 20px;
+}
+
+a{
+  justify-content: first baseline;
+  align-items: center;
+  display: flex;
+  top: 100px;
+}
+
+a ,button{
+  gap: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  width: 100px;
+}
+
+.dark-mode .video-card {
+  background-color: #1f1f1f;
+}
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.réseausocial {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 85px;
+  right: 100px;
+  z-index: 2;
+  gap: 5px;
+}
+.réseausocial li {
+  list-style: none;
+}
+
+.paragraphe {
+  position: absolute;
+  display: flex;
+  left: 100px;
+  margin-top: 100px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  z-index: 2;
+  gap: 5px;
+}
+
+img {
+  height: 470px;
+  width: 85%;
+  top: 50px;
+  position: absolute;
+  left: 150px;
+  border: 0px transparent;
+  background:transparent;
+} 
+
+/* Correction pour la vidéo - mêmes dimensions que l'image */
+video {
+  height: 470px; /* Même hauteur que l'image */
+  width: 85%;    /* Même largeur que l'image */
+  top: 50px;
+  position: absolute;
+  left: 150px;
+  border: 0px transparent;
+  background:transparent;
+  object-fit: cover; /* Conserve les proportions */
+} 
+
+.section {
+  width: 90%;
+  height: 60vh;
+  transform:translate3d(26px);
+  transform-origin:center;
+  mask-repeat:no-repeat;
+  mask-size:100% 100%;
+  mask-position:center;
+}
